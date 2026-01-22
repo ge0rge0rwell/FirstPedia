@@ -10,7 +10,7 @@ function fkv_register_taxonomies()
 {
 
     // Taxonomy: Category (FTC Manual, Strategy, etc.)
-    register_taxonomy('fkv_category', array('first_content'), array(
+    register_taxonomy('fkv_category', array('fkv_tip'), array(
         'labels' => array(
             'name' => 'FKV Categories',
             'singular_name' => 'FKV Category',
@@ -25,7 +25,7 @@ function fkv_register_taxonomies()
     ));
 
     // Taxonomy: Year
-    register_taxonomy('fkv_year', array('first_content'), array(
+    register_taxonomy('fkv_year', array('fkv_portfolio'), array(
         'labels' => array(
             'name' => 'Years',
             'singular_name' => 'Year',
@@ -40,7 +40,7 @@ function fkv_register_taxonomies()
     ));
 
     // Taxonomy: Team
-    register_taxonomy('fkv_team', array('first_content'), array(
+    register_taxonomy('fkv_team', array('fkv_portfolio'), array(
         'labels' => array(
             'name' => 'Teams',
             'singular_name' => 'Team',
@@ -55,7 +55,7 @@ function fkv_register_taxonomies()
     ));
 
     // Taxonomy: Award Type
-    register_taxonomy('fkv_award', array('first_content'), array(
+    register_taxonomy('fkv_award', array('fkv_portfolio'), array(
         'labels' => array(
             'name' => 'Awards',
             'singular_name' => 'Award',
